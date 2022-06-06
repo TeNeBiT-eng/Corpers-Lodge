@@ -1,0 +1,18 @@
+header{
+    background-color: $headerBg;
+    padding: 1rem;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        .imgContainer{
+            img{
+                width: 70%;
+            }
+        }
+        .ul_signup{
+            display: none;
+        }
+    }
+}

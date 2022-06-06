@@ -31,30 +31,62 @@ header {
   padding: 10px 0;
 }
 
-.sign-up-btn {
-  border: 2px solid #101030;
+.link-a {
+  color: black;
+}
+.link-a:hover {
+  background: rgba(1, 1, 1, 0.5);
+  padding: 8px;
+  border-radius: 7px;
+  transition: all ease-out 0.4s;
+}
+
+.sign-btn {
+  color: white;
   background-color: #190E2C;
   padding: 10px;
   border-radius: 6px;
 }
-.sign-up-btn:hover {
-  background-color: #fef5f1;
-}
-
-.sign-up-btn a {
-  color: white;
-}
-.sign-up-btn a:hover {
-  color: #190E2C;
+.sign-btn:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid #101030;
+  transition: all 0.5s ease-in;
 }
 
 .header-right > ul {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
   margin-top: auto;
   margin-bottom: auto;
   align-items: center;
+}
+
+.drop-down {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-cont {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 10px;
+  position: absolute;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.drop-down:hover .dropdown-cont {
+  display: block;
+}
+
+.drop-img:hover {
+  background: rgba(1, 1, 1, 0.5);
+  padding: 10px;
+  border-radius: 7px;
+  transition: all ease-out 0.4s;
 }
 
 @media screen and (max-width: 800px) {

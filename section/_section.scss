@@ -87,7 +87,7 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin:auto 0;
+    margin: auto 0;
 }
 
 .main-stream {
@@ -112,13 +112,14 @@
 
 
 }
-.parse{
-   margin-right: auto;
+
+.parse {
+    margin-right: auto;
     background-color: #fff;
     margin-left: -10px;
     padding: 10px;
-    border-radius:  0  0 10px 0;
-    
+    border-radius: 0 0 10px 0;
+
 }
 
 .width-class2 {
@@ -151,26 +152,71 @@
     color: #fff;
 
 }
-.texts{
-   
-}
-.back-ground{
+
+// .texts{
+
+// }
+.back-ground {
     display: grid;
-    grid-template-columns: repeat (1,400px);
+    grid-template-columns: repeat (1, 400px);
     // grid-gap: 80px;
     max-width: 1200px;
     justify-content: center;
     margin: 0 auto;
 }
-h3{
+
+h3 {
     text-align: center;
-    padding-bottom: 9rem;
+    padding-bottom: 5rem;
 }
-.images-reps{
+
+.images-reps {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     justify-content: space-evenly;
     width: 100%;
     gap: 47px;
+
+    .image-rep1{
+        cursor: pointer;
+        &:hover{
+            transform: scaleX(1.2);
+            opacity: 0.7;
+            animation: forwards;
+            transition: all 0.5s ;
+        }
+    }
+    .image-rep2{
+        cursor: pointer;
+        &:hover{
+            transform: scaleX(1.2);
+            opacity: 0.7;
+            transition: all 0.5s ;
+        }
+    }
+    .image-rep3{
+        cursor: pointer;
+        &:hover{
+            transform: scaleX(1.2);
+            opacity: 0.7;
+            transition: all 0.5s ;
+        }
+    }
 }
+.section-3{
+    background-color: #F2F2F2;
+}
+.img-adam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+//    gap: 20px;
+   width: 70%
+}
+.adam > .adam-img{
+    width: 24.5rem;
+}
+
+

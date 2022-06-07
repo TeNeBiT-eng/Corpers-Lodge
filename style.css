@@ -2,11 +2,18 @@
   padding-top: 4vh;
 }
 .btnContainer button {
+  cursor: pointer;
   padding: 0.8rem 1.5rem;
   background-color: hsl(262deg, 52%, 11%);
   border: none;
   border-radius: 5px;
   color: white;
+  transition: 0.4s ease;
+}
+.btnContainer button:hover {
+  background-color: transparent;
+  color: hsl(262deg, 52%, 11%);
+  border: 1.4px solid hsl(262deg, 52%, 11%);
 }
 
 .btnContainer2 {
@@ -17,6 +24,7 @@
   padding-left: 1rem;
 }
 .btnContainer2 .getStartedBtn {
+  cursor: pointer;
   padding: 0.8rem 1.5rem;
   background-color: hsl(262deg, 52%, 11%);
   border: none;
@@ -30,6 +38,7 @@
   border: 1.4px solid hsl(262deg, 52%, 11%);
 }
 .btnContainer2 .learnMoreBtn {
+  cursor: pointer;
   background-color: transparent;
   padding: 0.8rem 1.5rem;
   border: 1.4px solid hsl(262deg, 52%, 11%);
@@ -181,6 +190,7 @@ header nav .ul_signup {
 .section3 {
   background-color: hsl(0deg, 0%, 95%);
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .section3 .cardParent {
   display: grid;
@@ -254,4 +264,77 @@ header nav .ul_signup {
   font-weight: 600;
   padding: 0.7rem 1rem;
   border-radius: 3px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.section3 .cardParent .card .houseName_location_amenities ul li a button:hover {
+  background-color: transparent;
+  border: 1px solid hsl(36deg, 96%, 37%);
+  color: hsl(36deg, 96%, 37%);
+}
+.section3 .cardParent a {
+  text-align: center;
+}
+.section3 .cardParent a button {
+  cursor: pointer;
+  background-color: hsl(36deg, 96%, 37%);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.5rem 2.5rem;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.section3 .cardParent a button:hover {
+  background-color: transparent;
+  border: 1px solid hsl(36deg, 96%, 37%);
+  color: hsl(36deg, 96%, 37%);
+}
+
+.section4 {
+  padding-top: 3rem;
+}
+.section4 p {
+  padding-top: 0rem !important;
+}
+.section4 .parentCity .image_container {
+  position: relative;
+}
+.section4 .parentCity .image_container:hover .city_name_view_container {
+  opacity: 1;
+  margin-left: 0px;
+}
+.section4 .parentCity .image_container .city_img {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.section4 .parentCity .image_container .city_img img {
+  width: 100%;
+  border-radius: 3px;
+}
+.section4 .parentCity .image_container .city_name_view_container {
+  border-radius: 5px;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  bottom: 0%;
+  right: 5%;
+  height: 97.7%;
+  opacity: 0;
+  margin-left: 1000px;
+  background-color: hsla(0deg, 0%, 0%, 0.56);
+  transition: 0.5s ease-in-out;
+}
+.section4 .parentCity .image_container .city_name_view_container .city_name_view {
+  width: 20%;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

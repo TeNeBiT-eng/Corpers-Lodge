@@ -1,14 +1,18 @@
 header{
     background-color: $headerBg;
     padding: 1rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 90%;
         margin: 0 auto;
         .imgContainer{
             img{
-                width: 70%;
+                width: 100%;
             }
         }
         .ul_signup{

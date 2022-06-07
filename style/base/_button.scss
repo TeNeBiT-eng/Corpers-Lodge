@@ -1,0 +1,42 @@
+.btnContainer{
+    padding-top: 4vh;
+    button{
+        padding: 0.8rem 1.5rem;
+        background-color: $btn1;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+}
+.btnContainer2{
+    padding-top: 5vh;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 1rem;
+    .getStartedBtn{
+        padding: 0.8rem 1.5rem;
+        background-color: $btn1;
+        border: none;
+        border-radius: 5px;
+        transition: .7s ease;
+        color: white;
+        &:hover{
+            background-color: transparent;
+            color: $btn1;
+            border: 1.4px solid $btn1;
+        }
+    }
+    .learnMoreBtn{
+        background-color: transparent;
+        padding: 0.8rem 1.5rem;
+        border: 1.4px solid $btn1;
+        border-radius: 5px;
+        transition: .7s ease;
+        margin-top: .7rem;
+        &:hover{
+            background-color: $btn1;
+            color: white;
+        }
+    }
+}

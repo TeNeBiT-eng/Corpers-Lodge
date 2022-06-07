@@ -1,13 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
     header{
         .ul_signup{
             display: flex !important;
+            column-gap: 1rem;
+            align-items: center;
             ul{
                 display: flex;
+                column-gap: 2rem;
+                li{
+                    a{
+                        color: $btn1;
+                        font-size: .9rem;
+                        text-decoration: none;
+                        font-weight: 500;
+                    }
+                }
             }
         }
         .bars{
             display: none;
+            i{
+                color: $btn1;
+            }
         }
     }
 }

@@ -1,0 +1,177 @@
+.section1{
+    padding-top: 5rem;
+    .introhome_introtext{
+        display: flex;
+        flex-direction: column;
+        .introhome_container{
+            width: 90%;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+        }
+        .introtext{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.section2{
+    background-color: $headerBg;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    .img_introhome2{
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        .empty_introhome2{
+            text-align: center;
+            position: relative;
+            width: 100%;
+            // .empty{
+            //     background-color: $sectiondiv2;
+            //     width: 16.25%;
+            //     height: 397.21px;
+            //     width: 65%;
+            //     margin: 0 auto;
+            //     transform: translateX(-12%);
+            // }
+            .introhome2{
+                background-color: $btn1;
+                padding: .5rem .3rem;
+                width: 82%;
+                margin: 0 auto;
+                // position: absolute;
+                // top: 13%;
+                // left: 24%;
+                // width: 68%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+.section3{
+    background-color: $section3Bg;
+    padding-top: 4rem;
+    .cardParent{
+        display: grid;
+        row-gap: 2rem;
+        .card{
+            background-color: white;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 9px 9px 9px 9px;
+            padding-bottom: 2rem;
+            .homePicture{
+                text-align: center;
+                img{
+                    width: 104%;
+                    transform: translateX(-2%);
+                }
+            }
+            .houseName_location_amenities{
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 1rem;
+                .houseName{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: black;
+                    // padding-left: 2rem;
+                }
+                .location{
+                    color: $sectiondiv2;
+                    font-size: medium;
+                    font-weight: 500;
+                    width: 90%;
+                }
+                .amenities{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    place-items: center;
+                    column-gap: .4rem;
+                    row-gap: .6rem;
+                    div{
+                        background-color: $btn1;
+                        padding: .8rem;
+                        margin-top: .5rem;
+                        border-radius: 8px;
+                        width: 100%;
+                        color: white;
+                        text-align: center;
+                        .mainAmenity{
+                            padding-left: .4rem;
+                        }
+                    }
+                }
+                ul{
+                    // // display: flex;
+                    // // justify-content: space-between;
+                    // align-items: center;
+                    text-align: center;
+                    padding-top: 1.2rem;
+                    .rate{
+                        color: $btn1;
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        padding-bottom: 1rem;
+                    }
+                    li{
+                        a{
+                            button{
+                                background-color: $btn2;
+                                color: white;
+                                border: none;
+                                font-size: .7rem;
+                                font-weight: 600;
+                                padding: .7rem 1rem;
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// .section3{
+//     background-color: $section3Bg;
+//     padding-top: 5rem;
+//     .homePicture{
+//         width: 85.3%;
+//         margin: 0 auto;
+//         img{
+//             width: 100%;
+//         }
+//     }   
+//     .card{
+//         background-color: white;
+//         width: 81.5%;
+//         margin: 0 auto;
+//         // position: absolute;
+//         transform: translateY(9%);
+//         padding-bottom: 2rem;
+//         // border-radius: 10px 10px 0px 0px;
+//         p{
+//             text-align: start !important;
+//             width: 80%;
+//         }
+//     }
+// }
+// .homePicture_card{
+//     position: relative;
+// }

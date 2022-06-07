@@ -122,6 +122,51 @@ p {
     color: hsl(262deg, 52%, 11%);
   }
 }
+footer {
+  padding-top: 3rem;
+  background-color: hsl(0deg, 0%, 95%);
+  margin-top: 4rem;
+}
+footer .footerLogo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+footer .faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+footer .faq .question {
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+footer .faq .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease;
+}
+footer .faq .answer p {
+  line-height: 1.6;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+}
+
+.faq.active i {
+  transform: rotate(180deg);
+}
+
+i {
+  transition: 0.4s ease-in-out;
+}
+
 header {
   background-color: hsl(21deg, 81%, 96%);
   padding: 1rem;

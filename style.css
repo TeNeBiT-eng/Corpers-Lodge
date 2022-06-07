@@ -297,19 +297,26 @@ header nav .ul_signup {
 }
 .section4 p {
   padding-top: 0rem !important;
+  padding-bottom: 2rem;
+}
+.section4 .parentCity {
+  display: grid;
+  row-gap: 2rem;
 }
 .section4 .parentCity .image_container {
   position: relative;
+  cursor: pointer;
 }
 .section4 .parentCity .image_container:hover .city_name_view_container {
   opacity: 1;
-  margin-left: 0px;
+  text-align: center;
+  width: 90%;
+  left: 5%;
 }
 .section4 .parentCity .image_container .city_img {
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  cursor: pointer;
 }
 .section4 .parentCity .image_container .city_img img {
   width: 100%;
@@ -319,12 +326,13 @@ header nav .ul_signup {
   border-radius: 5px;
   position: absolute;
   top: 0%;
-  left: 5%;
+  left: 100%;
   bottom: 0%;
-  right: 5%;
+  right: 0%;
   height: 97.7%;
   opacity: 0;
-  margin-left: 1000px;
+  overflow-x: hidden;
+  overflow: hidden;
   background-color: hsla(0deg, 0%, 0%, 0.56);
   transition: 0.5s ease-in-out;
 }

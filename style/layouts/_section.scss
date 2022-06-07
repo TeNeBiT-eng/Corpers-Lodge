@@ -172,19 +172,25 @@
     padding-top: 3rem;
     p{
         padding-top: 0rem !important;
+        padding-bottom: 2rem;
     }
     .parentCity{
+        display: grid;
+        // flex-direction: column;
+        row-gap: 2rem;
         .image_container{
             position: relative;
+            cursor: pointer;
             &:hover .city_name_view_container{
                 opacity: 1;
-                margin-left: 0px;
+                text-align: center;
+                width: 90%;
+                left: 5%;
             }
             .city_img{
                 text-align: center;
                 width: 90%;
                 margin: 0 auto;
-                cursor: pointer;
                 img{
                     width: 100%;
                     border-radius: 3px;
@@ -194,12 +200,13 @@
                 border-radius: 5px;
                 position: absolute;
                 top: 0%;
-                left: 5%;
+                left: 100%;
                 bottom: 0%;
-                right: 5%;
+                right: 0%;
                 height: 97.7%;
                 opacity: 0;
-                margin-left: 1000px;
+                overflow-x: hidden;
+                overflow: hidden;
                 background-color: $bgHover;
                 transition: 0.5s ease-in-out;
                 .city_name_view{

@@ -6,6 +6,13 @@
     .toggle-bar {
         display: inline-block;
         width: 30px;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.7;
+        }
+
 
 
     }
@@ -19,7 +26,8 @@
         flex: auto;
         flex-direction: row;
         justify-content: space-between;
-        
+        align-items: center;
+
 
     }
 }

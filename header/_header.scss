@@ -1,5 +1,7 @@
 header {
     background-color: #fef5f1;
+    padding: 0.8rem;
+ 
 
 }
 
@@ -25,27 +27,32 @@ header {
     padding: 10px 0;
 
 }
-.link-a{
- color: black;
- &:hover{
-     background: rgba(0.5, 0.5, 0.5, 0.5);
-     padding: 8px;
-     border-radius: 7px;
-     transition: all ease-out 0.4s;
- }
+
+.link-a {
+    color: black;
+    transition: all ease-in 0.4s;
+
+    &:hover {
+      border-bottom: 3px solid #190E2C;
+        border-radius: 2px;
+        transition: all ease-out 0.4s;
+    }
 }
-.sign-btn{
+
+.sign-btn {
     color: white;
     background-color: #190E2C;
     padding: 10px;
-    border-radius: 6px ;
-    &:hover{
+    border-radius: 6px;
+
+    &:hover {
         color: black;
-        background-color:white ;
+        background-color: white;
         border: 2px solid #101030;
         transition: all 0.5s ease-in;
     }
 }
+
 .header-right>ul {
     display: flex;
     flex-direction: row;
@@ -55,27 +62,46 @@ header {
     align-items: center;
 
 }
-.drop-down{
+
+.drop-down {
     position: relative;
     display: inline-block;
+    
 }
-.dropdown-cont{
+
+.dropdown-cont {
     background-color: white;
     border: 1px solid white;
     border-radius: 7px;
     padding: 10px;
     position: absolute;
     display: none;
-margin-bottom: 10px;
-    
+    margin-bottom: 10px;
+    margin-top: 10px;
+
 }
 
-.drop-down:hover  .dropdown-cont{
+.drop-down:hover .dropdown-cont {
     display: block;
 }
-.drop-img{
 
-    &:hover{
+// .drop-img{
+
+//     &:hover{
+//       
+//     }
+// }
+.drop-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+.drop-content li {
+    // margin-top: 10px;
+    &:hover {
         background: rgba(0.5, 0.5, 0.5, 0.5);
         padding: 10px;
         border-radius: 7px;

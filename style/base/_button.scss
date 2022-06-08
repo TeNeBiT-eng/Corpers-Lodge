@@ -1,9 +1,11 @@
 .btnContainer{
     padding-top: 4vh;
+    // margin: 3.1rem;
+    // transform: translateX(-10%) !important;
     button{
         cursor: pointer;
         padding: 0.8rem 1.5rem;
-        background-color: $btn1;
+        background-color: rgb(15, 3, 37);
         border: none;
         border-radius: 5px;
         color: white;
@@ -13,6 +15,13 @@
             color: $btn1;
             border: 1.4px solid $btn1;
         } 
+    }
+}
+@media (min-width: 930px) {
+    .btnContainer{
+        button{
+            // transform: translateY(-5%);
+        }
     }
 }
 .btnContainer2{

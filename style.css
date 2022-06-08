@@ -4,7 +4,7 @@
 .btnContainer button {
   cursor: pointer;
   padding: 0.8rem 1.5rem;
-  background-color: hsl(262deg, 52%, 11%);
+  background-color: rgb(15, 3, 37);
   border: none;
   border-radius: 5px;
   color: white;
@@ -97,12 +97,17 @@ p {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 930px) {
   header .ul_signup {
     display: flex !important;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
     align-items: center;
+    position: absolute !important;
+    right: -25.5vw !important;
+    top: 0% !important;
+    padding: 0 !important;
+    background: hsl(21deg, 81%, 96%) !important;
   }
   header .ul_signup ul {
     display: flex;
@@ -110,15 +115,19 @@ p {
          column-gap: 2rem;
   }
   header .ul_signup ul li a {
-    color: hsl(262deg, 52%, 11%);
+    color: hsl(262deg, 52%, 11%) !important;
     font-size: 0.9rem;
     text-decoration: none;
     font-weight: 500;
   }
-  header .bars {
+  header .ul_signup ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+  header .menu {
     display: none;
   }
-  header .bars i {
+  header .menu i {
     color: hsl(262deg, 52%, 11%);
   }
 }
@@ -136,6 +145,7 @@ footer .faq {
   max-width: 700px;
   margin-top: 2rem;
   padding-bottom: 1rem;
+  margin: auto;
   cursor: pointer;
 }
 footer .faq .question {
@@ -185,17 +195,51 @@ header nav .imgContainer img {
   width: 100%;
 }
 header nav .ul_signup {
-  display: none;
+  padding: 1.4rem;
+  transition: 0.6s ease-in-out;
+  position: absolute;
+  top: 116%;
+  right: -155vw;
+  width: 52.4%;
+  background: linear-gradient(to top, hsl(262deg, 52%, 11%), hsl(36deg, 96%, 37%));
+  opacity: 0.8;
+  text-align: center;
+}
+header nav .ul_signup ul {
+  left: 0 !important;
+  transform: translateX(0%) !important;
+}
+header nav .ul_signup ul li {
+  color: snow;
+  padding: 1rem 0;
+}
+header nav .ul_signup ul li:hover {
+  font-weight: bold;
+}
+header nav .ul_signup ul li a {
+  text-decoration: none;
+  color: white;
+}
+header .change {
+  display: block;
+}
+header .nav {
+  position: absolute;
+}
+header .none {
+  right: 0% !important;
 }
 header .progress-container {
   width: 100%;
   height: 8px;
   background: #ccc;
+  transform: translateY(290%);
 }
 header .progress-container .progress-bar {
   height: 8px;
   background: hsl(262deg, 52%, 11%);
   width: 0%;
+  z-index: 100;
 }
 
 .section1 {
@@ -206,7 +250,6 @@ header .progress-container .progress-bar {
   flex-direction: column;
 }
 .section1 .introhome_introtext .introhome_container {
-  width: 90%;
   margin: 0 auto;
 }
 .section1 .introhome_introtext .introhome_container img {

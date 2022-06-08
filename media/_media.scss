@@ -23,9 +23,16 @@
         display: grid !important;
         grid-template-columns: auto auto !important;
     }
+
+    .hehe {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width:800px) {
+    .btns {
+        padding-bottom: 20px !important;
+    }
 
     .header-right {
         display: none;

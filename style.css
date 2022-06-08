@@ -181,8 +181,16 @@ header {
     display: grid !important;
     grid-template-columns: auto auto !important;
   }
+
+  .hehe {
+    display: block !important;
+  }
 }
 @media screen and (max-width: 800px) {
+  .btns {
+    padding-bottom: 20px !important;
+  }
+
   .header-right {
     display: none;
   }
@@ -473,6 +481,19 @@ header {
   color: #fff;
 }
 
+.head {
+  top: 2rem;
+}
+
+.adam-img:hover {
+  transform: scaleX(1.1);
+  opacity: 0.7;
+}
+
+.div-c {
+  display: block;
+}
+
 .parse {
   margin-right: auto;
   background-color: #fff;
@@ -577,6 +598,10 @@ h3 {
   justify-content: space-between;
   margin: 0 auto;
   width: 86%;
+}
+
+.hehe {
+  display: none;
 }
 
 .line1-ul {

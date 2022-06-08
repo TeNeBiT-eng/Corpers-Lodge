@@ -112,6 +112,18 @@
 
 
 }
+.head{
+   top: 2rem ;
+}
+.adam-img{
+    &:hover{
+        transform: scaleX(1.1);
+        opacity: .7;
+    }
+}
+.div-c{
+    display: block;
+}
 
 .parse {
     margin-right: auto;

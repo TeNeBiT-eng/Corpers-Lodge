@@ -6,6 +6,11 @@ footer {
       display: flex;
       justify-content: center;
       margin-bottom: 2rem;
+      width: 80%;
+      margin: auto;
+      img{
+          width: 60%;
+      }
   }
   .faq {
     max-width: 700px;
@@ -33,6 +38,28 @@ footer {
   }
 }
 
+footer{
+    .footerFlex{
+        .sm_address{
+            display: grid;
+            place-items: center;
+            padding-top: 1.5rem;
+            .smImageContainer{
+                column-gap: 1rem !important;
+                img{
+                    cursor: pointer;
+                    width: 80%;
+                }
+            }
+            p{
+                // font-weight: 600;
+                width: 90%;
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+}
 .faq.active .answer{
     max-height: 300px;
 }

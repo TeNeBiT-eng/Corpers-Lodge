@@ -121,12 +121,59 @@
     }
 
     .section4{
-        
+        .parentCity{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    footer{
+        .footerFlex{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: baseline;
+            .footerLogo{
+                width: 90% !important;
+                margin: 0 auto;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .faq{
+        .question{
+            justify-content: flex-start !important;
+            i{
+                display: none;
+            }
+        }
+        .answer{
+            max-height: 300px !important;
+            p{
+                text-align: start !important;
+                width: 100% !important;
+                font-size: 1rem;
+            }
+        }
+    }
+    .sm_address{
+        width: 90%;
+        margin: 0 auto;
+        .smImageContainer{
+            display: flex;
+            align-items: baseline;
+        }
     }
 }
 
 
+
 @media (min-width: 1000px) {
+    .section4{
+        .parentCity{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
     .section3{
         .cardParent{
             grid-template-columns: repeat(4, 1fr);
@@ -136,6 +183,11 @@
 
 
 @media (min-width: 1440px) {
+    .section4{
+        .parentCity{
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
     .btnContainer{
         button{
             transform: translateY(-10%) !important;

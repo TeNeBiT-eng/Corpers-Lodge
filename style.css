@@ -100,7 +100,7 @@ header {
 
 @media screen and (max-width: 1300px) {
   .image-1 {
-    width: 100% !important;
+    width: 117% !important;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -113,9 +113,19 @@ header {
     align-items: center;
   }
 }
+@media screen and (max-width: 1264px) {
+  .img-adam {
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+  }
+}
 @media screen and (max-width: 800px) {
   .header-right {
     display: none;
+  }
+
+  .header-toggle {
+    display: flex !important;
   }
 
   .toggle-bar {
@@ -176,6 +186,38 @@ header {
 
   .image-1 {
     width: 100% !important;
+  }
+
+  .images-reps {
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .img-adam {
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .img-adam .adam-img {
+    width: 90% !important;
+  }
+
+  .footer-sect {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-gap: 20px !important;
+    grid-row-gap: 9px;
+    max-width: 300px !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    width: 80% !important;
+    margin-right: 20rem;
+  }
+  .footer-sect .sub {
+    text-align: left;
   }
 }
 @media screen and (max-width: 420px) {

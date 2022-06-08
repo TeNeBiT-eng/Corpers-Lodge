@@ -8,9 +8,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
-    // position: relative;
+    position: relative;
     .imgContainer {
       img {
         width: 100%;
@@ -21,9 +21,9 @@ header {
     //   margin: 0 1.1rem;
       transition: .6s ease-in-out;
       position: absolute;
-      top: 116%;
-      right: -155vw;
-      width: 52.4%;
+      top: 220%;
+      right: -1515vw;
+    //   width: 52.4%;
       background: linear-gradient(to top, $btn1, $btn2) ;
       opacity: 0.8;
       text-align: center;
@@ -50,9 +50,9 @@ header {
   .nav {
     position: absolute;
   }
-//   #menu_bar {
-//     z-index: 2;
-//   }
+  #menu_bar {
+    // z-index: 2;
+  }
   .none {
     right: 0% !important;
   }

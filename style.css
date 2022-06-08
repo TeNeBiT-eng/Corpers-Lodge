@@ -9,6 +9,7 @@
   border-radius: 5px;
   color: white;
   transition: 0.4s ease;
+  font-size: 0.9rem;
 }
 .btnContainer button:hover {
   background-color: transparent;
@@ -51,6 +52,21 @@
   color: white;
 }
 
+@media (min-width: 768px) {
+  .btnContainer2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  .btnContainer2 .getStartedBtn {
+    width: 100%;
+  }
+  .btnContainer2 .learnMoreBtn {
+    width: 100%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -64,7 +80,6 @@ h1 {
   text-align: center;
   font-size: 2.7rem;
   font-weight: 700;
-  margin-top: 5rem;
 }
 
 h2 {
@@ -97,17 +112,17 @@ p {
   margin: 0 auto;
 }
 
-@media (min-width: 930px) {
+@media (min-width: 768px) {
   header .ul_signup {
     display: flex !important;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
     align-items: center;
     position: absolute !important;
-    right: -25.5vw !important;
-    top: 0% !important;
+    right: 0vw !important;
+    top: -65% !important;
     padding: 0 !important;
-    background: hsl(21deg, 81%, 96%) !important;
+    background: hsla(21deg, 81%, 96%, 0) !important;
   }
   header .ul_signup ul {
     display: flex;
@@ -129,6 +144,41 @@ p {
   }
   header .menu i {
     color: hsl(262deg, 52%, 11%);
+  }
+
+  .section1 .introhome_introtext {
+    flex-direction: row !important;
+    align-items: center;
+  }
+  .section1 .introhome_introtext .introhome_container {
+    order: 2;
+  }
+  .section1 .introhome_introtext .introtext h1, .section1 .introhome_introtext .introtext p {
+    text-align: start;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section2 .img_introhome2 {
+    flex-direction: row !important;
+    align-items: center;
+  }
+  .section2 .img_introhome2 .h2_p_btnContainer2 h2, .section2 .img_introhome2 .h2_p_btnContainer2 p {
+    text-align: start !important;
+  }
+}
+@media (min-width: 1440px) {
+  .btnContainer button {
+    transform: translateY(-10%) !important;
+  }
+}
+@media (min-width: 2560px) {
+  header .ul_signup {
+    top: -125% !important;
+  }
+
+  .btnContainer button {
+    transform: translateY(-30%) !important;
   }
 }
 footer {
@@ -188,8 +238,9 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 93%;
   margin: 0 auto;
+  position: relative;
 }
 header nav .imgContainer img {
   width: 100%;
@@ -198,9 +249,8 @@ header nav .ul_signup {
   padding: 1.4rem;
   transition: 0.6s ease-in-out;
   position: absolute;
-  top: 116%;
-  right: -155vw;
-  width: 52.4%;
+  top: 220%;
+  right: -1515vw;
   background: linear-gradient(to top, hsl(262deg, 52%, 11%), hsl(36deg, 96%, 37%));
   opacity: 0.8;
   text-align: center;
@@ -243,13 +293,14 @@ header .progress-container .progress-bar {
 }
 
 .section1 {
-  padding-top: 5rem;
+  padding-top: 9rem;
 }
 .section1 .introhome_introtext {
   display: flex;
   flex-direction: column;
 }
 .section1 .introhome_introtext .introhome_container {
+  width: 90%;
   margin: 0 auto;
 }
 .section1 .introhome_introtext .introhome_container img {

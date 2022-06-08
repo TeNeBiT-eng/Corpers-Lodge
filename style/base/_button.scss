@@ -10,6 +10,7 @@
         border-radius: 5px;
         color: white;
         transition: .4s ease;
+        font-size: .9rem;
         &:hover{
             background-color: transparent;
             color: $btn1;
@@ -17,13 +18,7 @@
         } 
     }
 }
-@media (min-width: 930px) {
-    .btnContainer{
-        button{
-            // transform: translateY(-5%);
-        }
-    }
-}
+
 .btnContainer2{
     padding-top: 5vh;
     width: 90%;
@@ -58,3 +53,23 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .btnContainer2{
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        column-gap: 1rem;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // align-items: baseline;
+        .getStartedBtn{
+            width: 100%;
+        }
+        .learnMoreBtn{
+            width: 100%;
+        }
+    }
+}
+
+

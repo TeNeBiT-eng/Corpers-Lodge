@@ -60,7 +60,28 @@
     .section2{
         .img_introhome2{
             flex-direction: row !important;
+            justify-content: center;
             align-items: center;
+            column-gap: 2rem;
+            width: 90%;
+            margin: 0 auto;
+            .empty_introhome2{
+                position: relative;
+            }
+            .empty{
+                background-color: $sectiondiv2;
+                width: 16.25%;
+                height: 397.21px;
+                width: 65%;
+                margin: 0 auto;
+                transform: translateX(-12%);
+            }
+            .introhome2{
+                position: absolute;
+                top: 13%;
+                left: 24%;
+                width: 68%;
+            }
             .h2_p_btnContainer2{
                 h2, p{
                     text-align: start !important;

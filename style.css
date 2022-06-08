@@ -20,9 +20,7 @@
 .btnContainer2 {
   padding-top: 5vh;
   width: 90%;
-  margin: 0 auto;
   text-align: center;
-  padding-left: 1rem;
 }
 .btnContainer2 .getStartedBtn {
   cursor: pointer;
@@ -55,16 +53,11 @@
 @media (min-width: 768px) {
   .btnContainer2 {
     display: flex;
-    justify-content: flex-start;
     align-items: baseline;
     -moz-column-gap: 1rem;
-         column-gap: 1rem;
-  }
-  .btnContainer2 .getStartedBtn {
-    width: 100%;
-  }
-  .btnContainer2 .learnMoreBtn {
-    width: 100%;
+    column-gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 * {
@@ -161,7 +154,29 @@ p {
 
   .section2 .img_introhome2 {
     flex-direction: row !important;
+    justify-content: center;
     align-items: center;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section2 .img_introhome2 .empty_introhome2 {
+    position: relative;
+  }
+  .section2 .img_introhome2 .empty {
+    background-color: hsl(36deg, 100%, 55%);
+    width: 16.25%;
+    height: 397.21px;
+    width: 65%;
+    margin: 0 auto;
+    transform: translateX(-12%);
+  }
+  .section2 .img_introhome2 .introhome2 {
+    position: absolute;
+    top: 13%;
+    left: 24%;
+    width: 68%;
   }
   .section2 .img_introhome2 .h2_p_btnContainer2 h2, .section2 .img_introhome2 .h2_p_btnContainer2 p {
     text-align: start !important;
@@ -323,17 +338,15 @@ header .progress-container .progress-bar {
 }
 .section2 .img_introhome2 .empty_introhome2 {
   text-align: center;
-  position: relative;
   width: 100%;
 }
 .section2 .img_introhome2 .empty_introhome2 .introhome2 {
   background-color: hsl(262deg, 52%, 11%);
   padding: 0.5rem 0.3rem;
-  width: 82%;
   margin: 0 auto;
 }
 .section2 .img_introhome2 .empty_introhome2 .introhome2 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .section3 {

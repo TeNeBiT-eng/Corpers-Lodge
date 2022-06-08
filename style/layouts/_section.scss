@@ -27,27 +27,15 @@
         flex-direction: column;
         .empty_introhome2{
             text-align: center;
-            position: relative;
             width: 100%;
-            // .empty{
-            //     background-color: $sectiondiv2;
-            //     width: 16.25%;
-            //     height: 397.21px;
-            //     width: 65%;
-            //     margin: 0 auto;
-            //     transform: translateX(-12%);
-            // }
             .introhome2{
                 background-color: $btn1;
                 padding: .5rem .3rem;
-                width: 82%;
+                // width: 82%;
                 margin: 0 auto;
-                // position: absolute;
-                // top: 13%;
-                // left: 24%;
-                // width: 68%;
+                
                 img{
-                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }

@@ -16,19 +16,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <title>Corpers Lodge</title>
   </head>
   <body>
     <header>
       <nav>
-        <div class="imgContainer">
+        <div class="animate__animated animate__lightSpeedInLeft imgContainer">
           <img
             src="/Corpers-Lodge/images/Corpers lodgecorperslodge-logo.svg"
             alt=""
           />
         </div>
 
-        <div id="menu_bar" class="ul_signup">
+        <div id="menu_bar" class="ul_signup animate__animated animate__lightSpeedInRight">
           <ul>
             <li>
               <a href="#">Home</a>
@@ -48,7 +50,7 @@
           </ul>
 
           <div class="btnContainer" style="transform: translateY(-15%)">
-            <a href="#">
+            <a href="/Corpers-Lodge/create account.html">
               <button>Sign Up</button>
             </a>
           </div>
@@ -65,14 +67,14 @@
 
     <section class="section1">
       <div class="introhome_introtext">
-        <div class="introhome_container">
+        <div class="animate__animated animate__fadeInUp introhome_container">
           <img
             src="/Corpers-Lodge/images/pexels-george-becker-129494 1introhome.svg"
             alt=""
           />
         </div>
 
-        <div class="introtext">
+        <div class="animate__animated animate__fadeInLeft introtext">
           <h1>Find your perfect home <span class="anywhere">Anywhere</span></h1>
           <p>
             You may be relocating to a new place, anticipating your service
@@ -92,16 +94,16 @@
       </div>
     </section>
 
-    <section class="section2">
+    <section class="section2" data-aos="flip-up">
       <div class="img_introhome2">
-        <div class="empty_introhome2">
+        <div class="empty_introhome2" data-aos="slide-up">
           <div class="empty"></div>
           <div class="introhome2">
             <img src="/Corpers-Lodge/images/introhome2.svg" alt="" />
           </div>
         </div>
 
-        <div class="h2_p_btnContainer2">
+        <div class="animate__animated animate__rotateInDownLeft h2_p_btnContainer2" data-aos="slide-up">
           <h2>Enjoy Luxury Apartment at Affordable Prices</h2>
           <p>
             Hello Corper, You don't have to be concerned about finding an
@@ -126,16 +128,14 @@
       </div>
     </section>
 
-    <section class="section3">
+    <section class="section3"  data-aos="flip-down">
       <h5>Recommendations for you</h5>
       <div class="cardParent">
-        <div class="card">
+        <!-- Radisson Blu -->
+        <div class="card" data-aos="slide-up" data-aos-duration="1500">
           <div class="homePicture">
             <img src="/images/Rectangle 195radissonblu-home.svg" alt="" />
           </div>
-
-          
-          <!-- Radisson Blu -->
           <div class="houseName_location_amenities">
             <span class="houseName">Radisson Blu</span> <br />
             <span class="location">Ikeja, Lagos</span>
@@ -188,7 +188,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="slide-up" data-aos-duration="1500">
           <div class="homePicture">
             <img src="/images/Rectangle 195radissonblu-home.svg" alt="" />
           </div>
@@ -249,7 +249,7 @@
 
         
         <!-- Park Inn -->
-        <div class="card">
+        <div class="card" data-aos="slide-up" data-aos-duration="1500">
           <div class="homePicture">
             <img src="/images/Rectangle 195radissonblu-home.svg" alt="" />
           </div>
@@ -309,7 +309,7 @@
 
   
     <!-- Golden Tulip -->
-        <div class="card">
+        <div class="card" data-aos="slide-up" data-aos-duration="1500">
           <div class="homePicture">
             <img src="/images/Rectangle 195goldentulip-home.svg" alt="" />
           </div>
@@ -375,7 +375,7 @@
   </div>
     </section>
 
-    <section class="section4">
+    <section class="section4" data-aos="flip-up">
         <h5>Corpers Lodge</h5>
         <p>Looking for Corpers Lodge in your community</p>
 
@@ -469,6 +469,11 @@
     </footer>
 
     <script src="/Corpers-Lodge/js/header.js" async defer></script>
+    <script src="/Corpers-Lodge/js/cursor.js" async defer></script>
     <script src="/Corpers-Lodge/js/footer.js" async defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 2000});
+    </script>
   </body>
 </html>

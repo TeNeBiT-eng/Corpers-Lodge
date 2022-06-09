@@ -46,6 +46,7 @@ footer{
             padding-top: 1.5rem;
             .smImageContainer{
                 column-gap: 1rem !important;
+                display: flex;
                 img{
                     cursor: pointer;
                     width: 80%;

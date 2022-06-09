@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/Corpers-Lodge/forgotPassword/imgs/Forgot\ Passwordbackground.svg);
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+}
+.parentContainer{
+    background-color: white;
+    width: 90%;
+    padding: 10vh 5vw;
+    border-radius: 5px;
+}
+h3{
+    position: relative;
+    font-size: 1.5rem;
+    color: hsla(262, 52%, 11%, 1);
+    letter-spacing: 0.09rem;
+    font-weight: 700;
+    /* margin-bottom: 0.5rem; */
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5rem;
+}
+p{
+    font-size: smaller;
+    color: hsla(262, 52%, 11%, 1);
+    text-align: center;
+}
+#form{
+    position: relative;
+}
+#form #email{
+    /* max-width: 100%; */
+    width: -webkit-fill-available;;
+    background: white;
+    outline: none;
+    border: 1px solid hsla(262, 52%, 11%, 1);
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    color:hsla(0, 0%, 54%, 1);
+    /* font-size: 1.2rem; */
+}
+#form #inputBox{
+    position: relative;
+}
+#form .invalid .inputBox ::before{
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background: url(/Corpers-Lodge/forgotPassword/imgs/invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+#form .valid .inputBox ::before{
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background: url(/Corpers-Lodge/forgotPassword/imgs/valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+#text{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0.3rem;
+}

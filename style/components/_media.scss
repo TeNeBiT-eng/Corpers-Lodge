@@ -1,7 +1,3 @@
-
-
-
-
 @media (min-width: 768px) {
     header{
         .ul_signup{
@@ -94,30 +90,7 @@
         .cardParent{
             grid-template-columns: auto auto;
         }
-        .seeMore{
-            // text-align: center;
-            display: flex;
-            justify-content: center;
-            padding-top: 3rem;
-            a{
-                button{
-                    background-color: $btn2;
-                    color: white;
-                    border: none;
-                    font-size: .7rem;
-                    font-weight: 600;
-                    padding: 1.5rem 2.5rem;
-                    border-radius: 3px;
-                    transition: .4s ease;
-                    cursor: pointer;
-                    &:hover{
-                        background-color: transparent;
-                        border: 1px solid $btn2;
-                        color: $btn2;
-                    }
-                }
-            }
-        }
+        
     }
 
     .section4{

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Password</title>
+    <link rel="stylesheet" href="/Corpers-Lodge/forgotPassword/cnp.css">
+</head>
+<body>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section>
+      <h1>Enter New Password</h1>
+      <p class="subText">Enter your mail and a reset link would be sent to your mail</p>
+
+      <form style="width: 90%; margin: 0 auto">
+        <div class="create">
+          <label for="password">Enter New Password</label> <br />
+          <input
+            type="password"
+            name="password"
+            placeholder="***************"
+            id="password"
+          />
+
+          <span onclick="togglePsw()">
+            <i style="bottom: 20%" id="hide1" class="fa-solid fa-eye"></i>
+            <i style="bottom: 20%" id="hide2" class="fa-solid fa-eye-slash"></i>
+          </span>
+        </div>
+        <br />
+
+        <div class="confirm">
+          <label for="Cpassword">Confirm New Password</label> <br />
+          <input
+            type="password"
+            name="confirmpassword"
+            placeholder="***************"
+            id="Cpassword"
+          />
+
+          <span class="span2" onclick="togglePS()">
+            <i style="bottom: 20%" id="hide3" class="fa-solid fa-eye"></i>
+            <i style="bottom: 20%" id="hide4" class="fa-solid fa-eye-slash"></i>
+          </span>
+        </div>
+        <p class="confirm_p" id="error">Password can't be empty!</p>
+        <br />
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px; width: 5%"
+          />
+          Remember me
+        </label>
+        <button class="sign-in-btn2" type="submit">Enter</button>
+      </form>
+    </section>
+
+    <script src="/Corpers-Lodge/forgotPassword/cnp.js" aync defer></script>
+</body>
+</html>

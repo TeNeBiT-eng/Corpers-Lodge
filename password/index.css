@@ -73,3 +73,6 @@ button:hover{
     top: 15%;
     gap: 20px;
 }
+#emailcheck{
+    width: 20px;
+}

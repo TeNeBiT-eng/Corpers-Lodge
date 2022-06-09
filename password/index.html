@@ -4,19 +4,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <title>login</title>
         <link rel="stylesheet" href="index.css">
+        <!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        > -->
     </head>
     <body>
         <main>
-            <div class="form">
+            <div class="form-section">
                 <div id="header-center center">
-                   <a href="/index.html"> <img src="/image/Corpers lodge.svg" alt=""></a>
                     <h4>
+                        <a href="/index.html">
+                            <img src="/image/Corpers lodge.svg" alt="">
+                        </a>
                         <p>WELCOME BACK</p>
                     </h4>
                 </div>
-                <form action="#">
+                <form action="#" id="form">
                     <div class="inputbx">
                         <label for="email">EMAIL</label>
                         <input
@@ -24,7 +33,9 @@
                             name="email"
                             id="email"
                             placeholder="enter your email address"
+                            onkeydown=" emailvalidation()"
                         >
+                        <i id="emailcheckicon" style="width:20%;"></i>
                         <span id="text"></span>
                     </div>
                     <div class="inputbx">
@@ -35,9 +46,10 @@
                             id="password"
                             placeholder="enter a password 8 numbers max"
                         >
-                        <span id="text"></span>
+                        <i class=""></i>
+                        <span id="passText"></span>
                     </div>
-                    <button type="submit"></button>
+                    <button onclick="emailvalidation()" type="submit">LOGIN</button>
                 </form>
             </div>
         </main>

@@ -64,6 +64,6 @@ function togglePsw() {
     return validpassword && validCpassword;
   };
   function checkValidation() {
-    let nextPage = "./index2.html";
+    let nextPage = "./pcs.html";
     checkValidity() ? window.location.assign(nextPage) : " ";
   }

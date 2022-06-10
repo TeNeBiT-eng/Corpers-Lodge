@@ -1,25 +1,31 @@
+var form = document.getElementById("form");
+let btn = document.getElementById('btn')
+form.addEventListener('submit', (e) =>{
+    e.preventDefault();
+    checkValidation()
+})
 function validation(){
-    var form = document.getElementById("form");
     var email = document.getElementById("email").value;
     var text = document.getElementById("text");
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
-
-    if (email.match(pattern)){
-        form.classList.add("valid");
-        form.classList.remove("invalid");
-        text.innerHTML = "Your Email address is Valid.";
+    let validateEmail = false
+    if (email == ""){
+        text.innerHTML = "empty";
+        text.style.color = "red";
+    }else if (email.match(pattern)){
+        text.innerHTML = "Your Email address is Valid."; 
         text.style.color = "#09c309";
-    }
-    else{
-        form.classList.remove("valid");
-        form.classList.add("invalid");
+    }  else {
         text.innerHTML = "Please Enter Valid Email address";
         text.style.color = "#ff0000";
+        validateEmail = true
     }
-    if (email == ""){
-        form.classList.add("valid");
-        form.classList.remove("invalid");
-        text.innerHTML = "";
-        text.style.color = "#00ff00";
-    }
+   return validateEmail;
+}
+
+/* validation() ?  */
+
+function checkValidation() {
+    let nextPage = "./cnp.html";
+    validation() ? window.location.assign(nextPage) : ''
 }

@@ -130,10 +130,13 @@ header {
 }
 
 .sign-btn {
-    color: white;
-    background-color: #190E2C;
+    color:#190E2C;
+    background-color:none;
     padding: 10px;
     border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
     &:hover {
         color: black;
@@ -146,7 +149,7 @@ header {
 .header-right>ul {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
     margin-top: auto;
     margin-bottom: auto;
     align-items: center;

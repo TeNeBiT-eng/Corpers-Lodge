@@ -1,0 +1,15 @@
+;
+
+@use "_header";
+@use "_media";
+@use "_section";
+@use "_footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}

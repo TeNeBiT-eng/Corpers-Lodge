@@ -58,9 +58,7 @@ button{
     #190E2C;
     cursor: pointer;
     
-
 }
-
 button:hover{
     color: #190E2C;
     background-color: #ffffff;
@@ -75,4 +73,4 @@ button:hover{
 }
 #emailcheck{
     width: 20px;
-}
+} 

@@ -25,14 +25,18 @@ main{
   flex-direction: column;
   background-color: #ffffff;
   width: 350px;
-height: 400px;
+height: auto;
   margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
   position: relative;
   top: 8%;
+  gap:50px;
   
   
+}
+p{
+    color: #101010;
 }
 label{
     font-weight: 500;

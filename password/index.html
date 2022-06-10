@@ -34,6 +34,7 @@
                             id="email"
                             placeholder="enter your email address"
                             onkeydown=" emailvalidation()"
+                            autocomplete="off"
                         >
                         <i id="emailcheckicon" style="width:20%;"></i>
                         <span id="text"></span>
@@ -45,12 +46,15 @@
                             name="password"
                             id="password"
                             placeholder="enter a password 8 numbers max"
-                        
-                        
+                            autocomplete="off"
                             onkeydown="passwordvalidation()"
-                        />
+                        >
                         <span id="passText"></span>
                     </div>
+                    <p>
+                        forgot password?
+                        <a href="">click here</a>
+                    </p>
                     <button onclick="emailvalidation(), passwordvalidation()" type="submit">LOGIN</button>
                 </form>
             </div>

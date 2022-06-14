@@ -1,0 +1,279 @@
+.section1{
+    padding-top: 9rem;
+    .introhome_introtext{
+        display: flex;
+        flex-direction: column;
+        .introhome_container{
+            width: 90%;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+        }
+        .introtext{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.section2{
+    background-color: $headerBg;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    .img_introhome2{
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        .empty_introhome2{
+            text-align: center;
+            width: 100%;
+            .introhome2{
+                background-color: $btn1;
+                padding: .5rem .3rem;
+                // width: 82%;
+                margin: 0 auto;
+                
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+.section3{
+    background-color: $section3Bg;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .cardParent{
+        display: grid;
+        row-gap: 2rem;
+        .card{
+            background-color: white;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 9px 9px 9px 9px;
+            padding-bottom: 2rem;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: .4s ease-in-out;
+            &:hover{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+                            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            }
+            .homePicture{
+                text-align: center;
+                img{
+                    width: 104%;
+                    transform: translateX(-2%);
+                }
+            }
+            .houseName_location_amenities{
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 1rem;
+                .houseName{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: black;
+                    // padding-left: 2rem;
+                }
+                .location{
+                    color: $sectiondiv2;
+                    font-size: medium;
+                    font-weight: 500;
+                    width: 90%;
+                }
+                .amenities{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    place-items: center;
+                    column-gap: .4rem;
+                    row-gap: .6rem;
+                    div{
+                        background-color: $btn1;
+                        padding: .8rem;
+                        margin-top: .5rem;
+                        border-radius: 8px;
+                        width: 100%;
+                        color: white;
+                        text-align: center;
+                        .mainAmenity{
+                            padding-left: .4rem;
+                        }
+                    }
+                }
+                ul{
+                    // // display: flex;
+                    // // justify-content: space-between;
+                    // align-items: center;
+                    text-align: center;
+                    padding-top: 1.2rem;
+                    .rate{
+                        color: $btn1;
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        padding-bottom: 1rem;
+                    }
+                    li{
+                        a{
+                            button{
+                                background-color: $btn2;
+                                color: white;
+                                border: none;
+                                font-size: .7rem;
+                                font-weight: 600;
+                                padding: .7rem 1rem;
+                                border-radius: 3px;
+                                transition: .4s ease;
+                                cursor: pointer;
+                                &:hover{
+                                    background-color: transparent;
+                                    border: 1px solid $btn2;
+                                    color: $btn2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        a{
+            text-align: center;
+            button{
+                cursor: pointer;
+                background-color: $btn2;
+                color: white;
+                border: none;
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 1.5rem 2.5rem;
+                border-radius: 3px;
+                transition: .4s ease;
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid $btn2;
+                    color: $btn2;
+                }
+            }
+        }
+    }
+    .seeMore{
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        a{
+            button{
+                background-color: $btn2;
+                color: white;
+                border: none;
+                font-size: .7rem;
+                font-weight: 600;
+                padding: 1.5rem 2.5rem;
+                border-radius: 3px;
+                transition: .4s ease;
+                cursor: pointer;
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid $btn2;
+                    color: $btn2;
+                }
+            }
+        }
+    }
+}
+
+
+.section4{
+    padding-top: 3rem;
+    p{
+        padding-top: 0rem !important;
+        padding-bottom: 2rem;
+    }
+    .parentCity{
+        display: grid;
+        // flex-direction: column;
+        row-gap: 2rem;
+        .image_container{
+            position: relative;
+            cursor: pointer;
+            &:hover .city_name_view_container{
+                opacity: 1;
+                text-align: center;
+                width: 90%;
+                left: 5%;
+            }
+            .city_img{
+                text-align: center;
+                width: 90%;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    border-radius: 3px;
+                }
+            }
+            .city_name_view_container{
+                border-radius: 5px;
+                position: absolute;
+                top: 0%;
+                left: 100%;
+                bottom: 0%;
+                right: 0%;
+                height: 97.7%;
+                opacity: 0;
+                overflow-x: hidden;
+                overflow: hidden;
+                background-color: $bgHover;
+                transition: 0.5s ease-in-out;
+                .city_name_view{
+                    width: 20%;
+                    color: white;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// .section3{
+//     background-color: $section3Bg;
+//     padding-top: 5rem;
+//     .homePicture{
+//         width: 85.3%;
+//         margin: 0 auto;
+//         img{
+//             width: 100%;
+//         }
+//     }   
+//     .card{
+//         background-color: white;
+//         width: 81.5%;
+//         margin: 0 auto;
+//         // position: absolute;
+//         transform: translateY(9%);
+//         padding-bottom: 2rem;
+//         // border-radius: 10px 10px 0px 0px;
+//         p{
+//             text-align: start !important;
+//             width: 80%;
+//         }
+//     }
+// }
+// .homePicture_card{
+//     position: relative;
+// }

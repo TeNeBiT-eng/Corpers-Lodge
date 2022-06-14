@@ -1,0 +1,182 @@
+@media (min-width: 768px) {
+    header{
+        .ul_signup{
+            display: flex !important;
+            column-gap: 1rem;
+            align-items: center;
+            position: absolute !important;
+            right: 0vw !important;
+            top: -65% !important;
+            // width: -1% !important;
+            padding: 0 !important;
+            background: hsla(21, 81%, 96%, 0)!important;
+            ul{
+                display: flex;
+                column-gap: 2rem;
+                li{
+                    a{
+                        color: $btn1 !important;
+                        font-size: .9rem;
+                        text-decoration: none;
+                        font-weight: 500;
+                        &:hover{
+                            text-decoration: underline;
+                            text-underline-offset: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .menu{
+            display: none;
+            i{
+                color: $btn1;
+            }
+        }
+    }
+
+    .section1{
+        // padding-top: 6rem;
+        .introhome_introtext{
+            flex-direction: row !important;
+            align-items: center;
+            .introhome_container{
+                order: 2;
+            } 
+            .introtext{
+                h1, p{
+                    text-align: start;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .section2{
+        .img_introhome2{
+            flex-direction: row !important;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2rem;
+            width: 90%;
+            margin: 0 auto;
+            .empty_introhome2{
+                position: relative;
+            }
+            .empty{
+                background-color: $sectiondiv2;
+                width: 16.25%;
+                height: 397.21px;
+                width: 65%;
+                margin: 0 auto;
+                transform: translateX(-12%);
+            }
+            .introhome2{
+                position: absolute;
+                top: 13%;
+                left: 24%;
+                width: 68%;
+            }
+            .h2_p_btnContainer2{
+                h2, p{
+                    text-align: start !important;
+                }
+            }
+        }
+    }
+
+    .section3{
+        .cardParent{
+            grid-template-columns: auto auto;
+        }
+        
+    }
+
+    .section4{
+        .parentCity{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    footer{
+        .footerFlex{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: baseline;
+            .footerLogo{
+                width: 90% !important;
+                margin: 0 auto;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .faq{
+        .question{
+            justify-content: flex-start !important;
+            i{
+                display: none;
+            }
+        }
+        .answer{
+            max-height: 300px !important;
+            p{
+                text-align: start !important;
+                width: 100% !important;
+                font-size: 1rem;
+            }
+        }
+    }
+    .sm_address{
+        width: 90%;
+        margin: 0 auto;
+        .smImageContainer{
+            display: flex;
+            align-items: baseline;
+        }
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+    .section4{
+        .parentCity{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .section3{
+        .cardParent{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .section4{
+        .parentCity{
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
+    .btnContainer{
+        button{
+            transform: translateY(-10%) !important;
+        }
+    }
+}
+
+@media (min-width: 2560px) {
+    header{
+        .ul_signup{
+            top: -125% !important;
+        }
+    }
+    .btnContainer{
+        button{
+            transform: translateY(-30%) !important;
+        }
+    }
+}
